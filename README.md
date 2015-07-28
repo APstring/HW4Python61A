@@ -85,9 +85,10 @@ def par2(r1, r2):
     rep_r2 = div_interval(one, r2)
     return div_interval(one, add_interval(rep_r1, rep_r2))
 
-# These two intervals give different results for parallel resistors:
+
 def do_interval_example(x,y):
     """
+    These two intervals give different results for parallel resistors:
     >>> (do_interval_example(interval(3,4), interval(5,5.5)))
     1.5789473684210527 to 2.75
     1.875 to 2.3157894736842106
